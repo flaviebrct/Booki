@@ -2,56 +2,75 @@
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
     font-family: 'Raleway', sans-serif;
-    
 }
+
+body{
+    width: 1082px;
+    margin: auto;
+}
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 nav{
     display: flex;
     height: 100px;
     font-size: 15px;
 }
-nav a{
+
+a{
     text-decoration: none;
+    color: black;
+}
+
+nav a{
     text-align: center;
     color: black;
     padding: 40px 0 0 0;
     width: 160px;
 }
+
 nav a:hover{
     color: #0065FC;
     border-top: solid;
     border-top-color: #0065FC;
 }
+
 .logo{
     margin-top: 10px;
     margin-left: 50px;
     height: 45px;
 }
+
 main{
     margin-left: 35px;
 }
+
 h1{
     font-weight: 700;
     font-size: 20px;
 }
+
 #heading{
     margin-left: 35px;
 }
+
 #heading>p{
     font-size: 16px;
     font-weight: 300;
     margin-top: -5px;
 }
+
 #recherche{
     display: flex;
     font-size: 0;
     align-items: center;
     height: 50px;
 }
+
 .recherche {
     background-color: #F2F2F2;
     font-size: 13px;
@@ -154,10 +173,14 @@ h1{
     font-size: 12px;
 }
 
+.bold{
+    font-weight: 600;
+}
+
 #hosting{
     display: flex;
     flex-direction: row;
-    width: 1440px;
+    width: 1006px;
     justify-content: space-around;
 }
 
@@ -167,7 +190,14 @@ h1{
     border-radius: 22px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 900px;
+    width: 662px;
+    height: 472px;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 .popular-title{
@@ -181,12 +211,60 @@ h1{
     font-size: 22px;
 }
 
+.hosting-cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 18px;
+    border: 3px solid;
+    border-color: white;
+    width: 184px;
+    overflow: hidden;
+    height: 166px;
+    font-size: 13px;
+}
+
+.tarif{
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.tarif-container{
+    margin-left: 10px;
+}
+
+.fa-star{
+    font-size: 10px;
+    width: 10px;
+    color: #0065FC;
+}
+
+#marseille p:last-child{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.grey{
+    color: #F2F2F2;
+}
+
+.card-cover{
+    width: 179px;
+    height: 87px;
+    object-fit: cover;
+}
+
 #popular{
     background-color: #F2F2F2;
     border-radius: 22px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 500px;
+    width: 317px;
+    height: 472px;
 }
 
     /* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
