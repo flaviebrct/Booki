@@ -5,7 +5,8 @@
 }
 
 body{
-    width: 1082px;
+    max-width: 1200px;
+    width: auto;
     margin: auto;
 }
 
@@ -188,16 +189,17 @@ h1{
     flex-direction: row;
     background-color: #F2F2F2;
     border-radius: 22px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
     width: 662px;
     height: 472px;
 }
 
 h2{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 18px;
 }
 
 .popular-title{
@@ -214,7 +216,7 @@ h2{
 .hosting-cards{
     display: flex;
     flex-flow: row wrap;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card{
@@ -222,19 +224,25 @@ h2{
     border-radius: 18px;
     border: 3px solid;
     border-color: white;
-    width: 184px;
     overflow: hidden;
-    height: 166px;
+    width: 184px;
+    height: 151px;
     font-size: 13px;
+    box-shadow: 0 0 25px -15px black;
 }
 
 .tarif{
-    margin-top: 6px;
+    margin-top: 3px;
     margin-bottom: 2px;
 }
 
 .tarif-container{
     margin-left: 10px;
+}
+
+.tarif-container p:last-of-type{
+    font-weight: 300;
+    font-size: 11px;
 }
 
 .fa-star{
@@ -244,8 +252,8 @@ h2{
 }
 
 #marseille p:last-child{
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 15px;
 }
 
 .grey{
@@ -266,6 +274,51 @@ h2{
     width: 317px;
     height: 472px;
 }
+
+.popular-card{
+    background-color: white;
+    width: 256px;
+    height: 110px;
+    border-radius: 18px;
+    border: 3px solid;
+    font-size: 13px;
+    border-color: white;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 25px -15px black;
+}
+
+.popular-hosting{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popular-cover{
+    width: 97px;
+    height: 105px;
+    object-fit: cover;
+}
+
+.tarif-popular{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    
+}
+
+.tarif-popular p:last-of-type{
+    font-size: 11px;
+    margin: -6px 0px 19px 0px;
+}
+
+.popular-stars .fa-star{
+    font-size: 9px;
+}
+
+
+
 
     /* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
     /* Media Queries */
